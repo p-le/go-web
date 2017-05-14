@@ -1,0 +1,85 @@
+.nav__brand, .nav__contact, .nav__logo, .nav__main {
+  display: flex;
+  ul {
+    display: flex;
+  }
+}
+  
+.nav__brand {
+  background-color: $nav-color;
+  justify-content: space-around;
+  @include phone {
+    flex-direction: column;
+  }
+}
+  
+.nav__logo {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  i {
+    padding: 10px;
+  }
+  .nav__brand__title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    .title {
+      font-size: 30px;
+    }
+    .sub__title {
+      font-size: 15px;
+    }
+  }
+  @include phone {
+    justify-content: center;
+  }
+}
+
+.nav__contact {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  li {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.nav__main {
+  background-color: $nav-menu-color;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 550;
+  letter-spacing: 0.98px;
+  li {
+    padding: 15px 30px;
+    margin: 0 5px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  @include phone {
+    font-size: 15px;
+    ul {
+      flex-direction: column;
+      li {
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+  
+    

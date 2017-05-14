@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+}
+  
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+ul, p {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  fill: #191b20;
+  box-sizing: content-box;
+  background: #191b20;
+  width: 70px;
+  height: 3px;
+  &.white {
+    background: #fff;
+    fill: #fff;
+  }
+  @include phone {
+    width: 50px;
+  }
+}
+
+section {
+  margin: 30px 0;
+  .header {
+    font-size: 25px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+  }
+  &.dark {
+    color: white;
+    background: #191b20;
+  }
+  @include phone {
+    .header {
+      font-size: 13px;
+    }
+  }
+}
+  
